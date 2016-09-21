@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="handle-ticker.css">
+    <title>handle-ticker</title>
+
+</head>
+<body>
+    <div id="main">
+        <div id="container">
+        <script id="headlines" type="text/handlebars">
+{{#headlines}}
+<a href={{link}} class="list">{{text}}</a>
+{{/headlines}}
+            </script>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+<script src="handle-ticker.js"></script>
+
+</body>
+
+</html>

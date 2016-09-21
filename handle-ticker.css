@@ -1,0 +1,39 @@
+body {
+   margin: 0;
+   overflow-x: hidden;
+
+}
+
+.list {
+   position: relative;
+   font-family: monospace;
+   font-weight: bold;
+   font-size: 18px;
+   padding-right: 50px;
+   text-decoration: none;
+   color: black;
+   margin: 0;
+}
+
+#container {
+position: relative;
+white-space: nowrap;
+height: 25px;
+font-size: 0;
+
+}
+
+#main {
+    top: 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.headline {
+    color: black;
+}
