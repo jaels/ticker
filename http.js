@@ -1,4 +1,3 @@
-
 var https = require('https');
 var fs = require('fs');
 var express = require('express');
@@ -121,7 +120,7 @@ app.get('/ticker', function (req,res) {
                     // obj.text=newArr[i].slice(0,newArr[i].indexOf('https')) + '...' + '(' + current + ')';
                      obj.text=newArr[j].slice(0,20) + '...' + '(' + current + ')';
 
-                    obj.link=newArr[j].slice(newArr[j].indexOf('https'),newArr[j].lastIndexOf("#"));
+                    obj.link=newArr[j].slice(newArr[j].indexOf('https'),newArr[j].lastIndexOf("*"));
 
                     obj.time=newArr[j].slice(newArr[j].indexOf('*'));
 
@@ -130,7 +129,7 @@ app.get('/ticker', function (req,res) {
                 }
 
                 final.sort(function(a,b) {
-                    return new Date(b.time).getTime() - new Date(a.time).getTime(); 
+                    return new Date(b.time).getTime() - new Date(a.time).getTime();
                 });
 
 
